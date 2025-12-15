@@ -4,7 +4,7 @@ Merhaba gençler,
 
 Bugün sizlerle son yılların en popüler konularından biri olan **Büyük Veri (Big Data)** üzerine konuşacağız. Bu kavramı muhtemelen duymuşsunuzdur ama tam olarak ne anlama geldiğini, neden bu kadar önemli olduğunu ve arkasındaki teknolojileri adım adım inceleyeceğiz.
 
-### Büyük Veri Nedir?
+## Büyük Veri Nedir?
 
 En basit haliyle başlayalım. Elinizde tek bir kitaptan oluşan bir bilgi olduğunu düşünün. İçindeki bilgileri bulmak, analiz etmek oldukça kolaydır. Şimdi, o tek kitap yerine dünyanın en büyük kütüphanesindeki tüm kitapların, dergilerin, ses kayıtlarının ve videoların bir anda önünüze yığıldığını hayal edin. Üstelik bu kütüphaneye her saniye binlerce yeni materyal ekleniyor. İşte bu devasa, karmaşık ve sürekli büyüyen bilgi yığınına **Büyük Veri** diyoruz.
 
@@ -16,7 +16,7 @@ Geleneksel yöntemlerimiz, yani standart bir bilgisayar ve basit programlar, bu 
 
 Büyük Veri'nin temel amacı, bu veri yığınının içindeki **değeri**, yani **anlamı** ortaya çıkarmaktır. Tıpkı bir madencinin tonlarca toprağı eleyerek değerli madenleri bulması gibi, biz de Büyük Veri'yi işleyerek değerli bilgilere ve öngörülere ulaşırız.
 
-### Büyük Veri'nin Getirdiği Kazanımlar
+## Büyük Veri'nin Getirdiği Kazanımlar
 
 Peki, bu devasa veriyi işlediğimizde elimize ne geçiyor? Elde ettiğimiz sonuçlar, kurumlar için çok çeşitli öngörülere ve kazanımlara yol açabilir. Örneğin:
 
@@ -28,7 +28,7 @@ Peki, bu devasa veriyi işlediğimizde elimize ne geçiyor? Elde ettiğimiz sonu
 *   **Geliştirilmiş Karar Verme:** Sezgilere veya sınırlı bilgilere dayanmak yerine, somut verilere dayalı daha sağlam ve doğru kararlar alabiliriz.
 *   **Bilimsel Keşifler:** Genom verilerinin analizinden uzay araştırmalarına kadar, bilim dünyasında çığır açan keşiflere imkan tanır.
 
-### Veri Analitiği: Veriyi Anlamlandırma Sanatı
+## Veri Analitiği: Veriyi Anlamlandırma Sanatı
 
 Büyük Veri'yi topladık, peki onu nasıl anlamlı hale getireceğiz? İşte burada **Veri Analitiği (Data Analytics)** devreye giriyor. Veri analitiği, ham veriden anlamlı sonuçlar çıkarmak için kullandığımız yöntemlerin, tekniklerin ve araçların tümünü kapsayan geniş bir disiplindir.
 
@@ -54,7 +54,7 @@ Bu analiz sürecini dört ana kategoriye ayırabiliriz. Bunu bir doktorun hasta 
     *   *Doktorun teşhisi:* "En iyi sonuç için bu antibiyotiği günde iki kez almalısınız."
     *   *İş dünyasından örnekler:* "Talebi karşılamak için hangi depodan hangi mağazaya ne kadar ürün göndermeliyiz?", "Kârı maksimize etmek için hangi ürünlere indirim yapmalıyız?"
 
-### Büyük Veri'nin 5 Temel Özelliği (5V)
+## Büyük Veri'nin 5 Temel Özelliği (5V)
 
 Bir veri setinin "Büyük Veri" olarak adlandırılabilmesi için genellikle "V" harfiyle başlayan beş temel özelliğe sahip olması beklenir.
 
@@ -95,40 +95,37 @@ Daha yapısal bir bakışla, Hadoop'u dört ana bileşenden oluşan bir çerçev
 
 Bu yapı sayesinde Hadoop, hem çok büyük verileri uygun maliyetli bir şekilde depolayabilir hem de bu veriyi paralel olarak çok hızlı bir şekilde işleyebilir. Önce tek bir makine üzerinde Hadoop'u nasıl çalıştıracağımızı, ardından da bunu küçük bir kümeye nasıl dönüştüreceğimizi göreceğiz.
 
-# Hadoop: Dağıtık Sistemlere Giriş
+## Hadoop: Dağıtık Sistemlere Giriş
 
-## Büyük Veri Nedir ve Neden Dağıtık Sistemlere İhtiyaç Duyarız?
+### Büyük Veri Nedir ve Neden Dağıtık Sistemlere İhtiyaç Duyarız?
 
 Gençler tekrar hatırlayalım, düşünün ki elinizde 1 TB boyutunda bir metin dosyası var ve bu dosyadaki her kelimenin kaç kez geçtiğini saymak istiyorsunuz. Normal bir bilgisayarda bu işlem saatler, belki de günler sürebilir. Peki ya 100 bilgisayar aynı anda bu dosyanın farklı parçaları üzerinde çalışsa? İşte dağıtık sistemlerin temel mantığı budur: büyük bir problemi küçük parçalara böl, her parçayı farklı bir makinede işle, sonuçları birleştir.
 
 Hadoop, bu fikri gerçeğe dönüştüren bir yazılım çerçevesidir. İki temel bileşenden oluşur:
 
-1. **HDFS (Hadoop Distributed File System):** Verileri birden fazla makineye dağıtarak saklar
-2. **YARN (Yet Another Resource Negotiator):** İşlem kaynaklarını yönetir ve görevleri dağıtır
+1.  **HDFS (Hadoop Distributed File System):** Verileri birden fazla makineye dağıtarak saklar
+2.  **YARN (Yet Another Resource Negotiator):** İşlem kaynaklarını yönetir ve görevleri dağıtır
 
-## Hadoop Mimarisi: Kim Ne Yapar?
+### Hadoop Mimarisi: Kim Ne Yapar?
 
 Bir Hadoop kümesi, tıpkı bir şirketteki organizasyon yapısı gibi çalışır. Bir yönetici (Master) ve birden fazla çalışan (Worker) vardır.
 
-### Master Düğümde Çalışan Servisler
+#### Master Düğümde Çalışan Servisler
 
-**NameNode:** HDFS'in beynidir. Hangi dosyanın hangi parçalarının (blok) nerede saklandığını bilir. Dosya sistemi ağacını, blok konumlarını ve metadata bilgilerini tutar. Ancak verilerin kendisini saklamaz; sadece "haritayı" tutar.
+*   **NameNode:** HDFS'in beynidir. Hangi dosyanın hangi parçalarının (blok) nerede saklandığını bilir. Dosya sistemi ağacını, blok konumlarını ve metadata bilgilerini tutar. Ancak verilerin kendisini saklamaz; sadece "haritayı" tutar.
+*   **ResourceManager:** YARN'ın merkezidir. Kümedeki tüm hesaplama kaynaklarını (CPU, bellek) yönetir. Bir iş geldiğinde, bu işi hangi makinelerde çalıştıracağına karar verir ve kaynakları tahsis eder.
+*   **SecondaryNameNode:** Adına aldanmayın, bu bir yedek NameNode değildir. NameNode'un edit log dosyalarını periyodik olarak birleştirerek checkpoint oluşturur. Bu sayede NameNode'un başlangıç süresi kısalır ve kurtarma işlemleri kolaylaşır.
 
-**ResourceManager:** YARN'ın merkezidir. Kümedeki tüm hesaplama kaynaklarını (CPU, bellek) yönetir. Bir iş geldiğinde, bu işi hangi makinelerde çalıştıracağına karar verir ve kaynakları tahsis eder.
+#### Worker Düğümlerde Çalışan Servisler
 
-**SecondaryNameNode:** Adına aldanmayın, bu bir yedek NameNode değildir. NameNode'un edit log dosyalarını periyodik olarak birleştirerek checkpoint oluşturur. Bu sayede NameNode'un başlangıç süresi kısalır ve kurtarma işlemleri kolaylaşır.
+*   **DataNode:** Gerçek verileri saklayan servisdir. Büyük dosyalar 128 MB'lık bloklara bölünür ve bu bloklar farklı DataNode'lara dağıtılır. Her DataNode, sakladığı blokların listesini periyodik olarak NameNode'a bildirir (heartbeat).
+*   **NodeManager:** Her worker makinedeki kaynak yöneticisidir. ResourceManager'dan gelen taleplere göre container'lar oluşturur ve bu container'larda Map veya Reduce görevlerini çalıştırır.
 
-### Worker Düğümlerde Çalışan Servisler
-
-**DataNode:** Gerçek verileri saklayan servisdir. Büyük dosyalar 128 MB'lık bloklara bölünür ve bu bloklar farklı DataNode'lara dağıtılır. Her DataNode, sakladığı blokların listesini periyodik olarak NameNode'a bildirir (heartbeat).
-
-**NodeManager:** Her worker makinedeki kaynak yöneticisidir. ResourceManager'dan gelen taleplere göre container'lar oluşturur ve bu container'larda Map veya Reduce görevlerini çalıştırır.
-
-## Pseudo-Distributed Mod: Tek Makinede Tam Deneyim
+### Pseudo-Distributed Mod: Tek Makinede Tam Deneyim
 
 Gerçek bir küme kurmadan önce, tüm bu servisleri tek bir makine üzerinde çalıştırarak sistemi öğrenebiliriz. Bu moda "Pseudo-Distributed" (sözde-dağıtık) denir. Tüm servisler aynı makinede çalışır, ancak gerçek bir küme gibi davranır.
 
-### Gereksinimler
+#### Gereksinimler
 
 Hadoop, Java Virtual Machine üzerinde çalışır. Bu nedenle önce Java'yı kurmamız gerekir. Ayrıca Hadoop, düğümler arası iletişim için SSH protokolünü kullanır.
 
@@ -142,25 +139,25 @@ sudo apt install openjdk-11-jdk -y
 # SSH kurulumu
 sudo apt install ssh openssh-server -y
 
-# Yüklü Linux'ü görme	
+# Yüklü Linux'ü görme
 lsb_release -a
 
-# Java Versionu Görme	
+# Java Versionu Görme
 java -version
 
 # Javanın yüklendiği yeri görme
 readlink -f $(which java)
 
-# Hangi javalar yüklü hangisi aktif ve nerede 
+# Hangi javalar yüklü hangisi aktif ve nerede
 update-java-alternatives -l
 
-#İstenilen Java Sürümünü Aktif Etme	
+# İstenilen Java Sürümünü Aktif Etme
 sudo update-alternatives --config java
 ```
 
 Java kurulumunu doğrulamak için `java -version` komutunu çalıştırabilirsiniz.
 
-### Hadoop Kullanıcısı Oluşturma
+#### Hadoop Kullanıcısı Oluşturma
 
 Sistem servislerini ayrı bir kullanıcı altında çalıştırmak, güvenlik ve yönetim açısından iyi bir uygulamadır.
 
@@ -173,7 +170,7 @@ sudo adduser --ingroup hadoop hduser
 su - hduser
 ```
 
-### SSH Yapılandırması
+#### SSH Yapılandırması
 
 Hadoop servisleri başlatıldığında, script'ler SSH üzerinden ilgili düğümlere bağlanır. Tek makinede bile olsak, `hduser` kullanıcısının kendi kendine parola sormadan SSH yapabilmesi gerekir.
 
@@ -188,7 +185,7 @@ chmod 0600 ~/.ssh/authorized_keys
 
 Test için `ssh localhost` komutunu çalıştırdığınızda parola sorulmamalıdır.
 
-### Hadoop İndirme ve Kurulum
+#### Hadoop İndirme ve Kurulum
 
 Apache Hadoop'un resmi dağıtımını indirip uygun bir konuma yerleştireceğiz.
 
@@ -204,7 +201,7 @@ sudo mv hadoop-3.3.6 /usr/local/hadoop
 sudo chown -R hduser:hadoop /usr/local/hadoop
 ```
 
-### Ortam Değişkenleri
+#### Ortam Değişkenleri
 
 Hadoop komutlarının sistemde her yerden çalışabilmesi için PATH değişkenini ve Hadoop'un ihtiyaç duyduğu ortam değişkenlerini tanımlamamız gerekir. `~/.bashrc` dosyasının sonuna şu satırları ekleyin:
 
@@ -216,11 +213,11 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 Değişiklikleri aktif etmek için `source ~/.bashrc` komutunu çalıştırın.
 
-## Yapılandırma Dosyaları
+### Yapılandırma Dosyaları
 
 Hadoop'un davranışını belirleyen yapılandırma dosyaları `$HADOOP_HOME/etc/hadoop` dizinindedir. Her dosya belirli bir bileşeni yapılandırır.
 
-### hadoop-env.sh
+#### hadoop-env.sh
 
 Bu dosya, Hadoop'un hangi Java kurulumunu kullanacağını belirtir.
 
@@ -228,7 +225,7 @@ Bu dosya, Hadoop'un hangi Java kurulumunu kullanacağını belirtir.
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ```
 
-### core-site.xml
+#### core-site.xml
 
 HDFS için varsayılan dosya sistemini tanımlar. `fs.defaultFS` özelliği, NameNode'un adresini belirtir.
 
@@ -241,7 +238,7 @@ HDFS için varsayılan dosya sistemini tanımlar. `fs.defaultFS` özelliği, Nam
 </configuration>
 ```
 
-### hdfs-site.xml
+#### hdfs-site.xml
 
 HDFS'e özgü ayarları içerir. Önce veri dizinlerini oluşturun:
 
@@ -271,7 +268,7 @@ Yapılandırma:
 
 `dfs.replication` değeri, her veri bloğunun kaç kopyasının tutulacağını belirtir. Tek makinede olduğumuz için bu değer 1'dir. Gerçek kümelerde genellikle 3 kullanılır.
 
-### mapred-site.xml
+#### mapred-site.xml
 
 MapReduce işlerinin hangi çerçeve üzerinde çalışacağını belirtir.
 
@@ -284,7 +281,7 @@ MapReduce işlerinin hangi çerçeve üzerinde çalışacağını belirtir.
 </configuration>
 ```
 
-### yarn-site.xml
+#### yarn-site.xml
 
 YARN için temel ayarları içerir.
 
@@ -299,7 +296,7 @@ YARN için temel ayarları içerir.
 
 `mapreduce_shuffle` ayarı, Map ve Reduce aşamaları arasındaki veri transferini (shuffle) etkinleştirir.
 
-## HDFS Formatlama ve Servisleri Başlatma
+### HDFS Formatlama ve Servisleri Başlatma
 
 HDFS'i ilk kez kullanmadan önce formatlanması gerekir. Bu işlem, NameNode için gerekli metadata yapısını oluşturur.
 
@@ -318,24 +315,24 @@ start-yarn.sh
 
 Çalışan Java süreçlerini görmek için `jps` komutunu kullanın. Çıktıda şunları görmelisiniz: NameNode, DataNode, SecondaryNameNode, ResourceManager, NodeManager.
 
-### Web Arayüzleri
+#### Web Arayüzleri
 
 Hadoop, kümenin durumunu izlemek için web arayüzleri sunar:
 
-- **HDFS NameNode:** http://localhost:9870
-- **YARN ResourceManager:** http://localhost:8088
+*   **HDFS NameNode:** http://localhost:9870
+*   **YARN ResourceManager:** http://localhost:8088
 
 Bu arayüzlerde "Live Nodes" sayısının 1 olduğunu görüyorsanız kurulum başarılıdır.
 
-## Çok Düğümlü Kümeye Geçiş
+### Çok Düğümlü Kümeye Geçiş
 
 Tek düğümlü kurulumun mantığını kavradıktan sonra, gerçek dağıtık ortama geçiş yapmak oldukça kolaydır. İki makinelik minimal bir küme için yapılması gereken değişiklikler şunlardır:
 
-### Master-Worker İletişimi
+#### Master-Worker İletişimi
 
 Master ve Worker makineler arasında `hduser` kullanıcısı için parolasız SSH yapılandırması gerekir. Master makineden `ssh worker-node` komutu parola sormadan çalışmalıdır.
 
-### Yapılandırma Değişiklikleri
+#### Yapılandırma Değişiklikleri
 
 **core-site.xml:** `localhost` yerine Master düğümün IP adresi veya hostname'i yazılır.
 
@@ -357,11 +354,11 @@ Master ve Worker makineler arasında `hduser` kullanıcısı için parolasız SS
 
 **workers dosyası:** Worker düğümlerin listesini içerir. `localhost` satırını silip worker hostname'lerini ekleyin.
 
-```
+```text
 worker-node
 ```
 
-### Yapılandırmayı Dağıtma
+#### Yapılandırmayı Dağıtma
 
 Master'daki yapılandırmayı tüm worker'lara kopyalamanız gerekir:
 
@@ -375,7 +372,7 @@ scp -r $HADOOP_HOME/etc/hadoop hduser@worker-node:$HADOOP_HOME/etc/
 
 Artık `start-dfs.sh` ve `start-yarn.sh` komutları, workers dosyasındaki tüm makinelere SSH ile bağlanarak ilgili servisleri başlatacaktır.
 
-## MapReduce: İlk İş
+### MapReduce: İlk İş
 
 Kurulumu test etmek için Hadoop ile gelen WordCount örneğini çalıştıralım.
 
@@ -397,13 +394,13 @@ hdfs dfs -cat /output/part-r-00000
 
 Beklenen çıktı:
 
-```
+```text
 dunya       2
 hosgeldin   1
 merhaba     1
 ```
 
-## Kümeyi Durdurma
+### Kümeyi Durdurma
 
 İşiniz bittiğinde servisleri düzgün bir şekilde kapatın:
 
@@ -412,42 +409,40 @@ stop-yarn.sh
 stop-dfs.sh
 ```
 
-## Sorun Giderme İpuçları
+### Sorun Giderme İpuçları
 
 Log dosyaları `$HADOOP_HOME/logs` dizininde bulunur. Bir servis başlamıyorsa, ilgili log dosyasını inceleyerek hatanın kaynağını tespit edebilirsiniz.
 
 Sık karşılaşılan sorunlar:
 
-- **SSH bağlantı hatası:** Parolasız SSH yapılandırmasını kontrol edin
-- **NameNode formatlanamıyor:** Daha önceki veri dizinlerini temizleyin
-- **DataNode bağlanamıyor:** Firewall ayarlarını ve port erişimlerini kontrol edin
-
-**Firewall Ayarları ve Yönetimi
-```bash
-# Firewall'ı açma
-sudo ufw enable
-#Port Açma
-sudo ufw allow 8080
-#Protokol Bazlı Port Açma
-sudo ufw allow 8080/tcp
-sudo ufw allow 8080/udp
-# Firewall'ın Durumunu (Açıkmı-Kapalımı?) Görme
-sudo ufw status
-```
-
-- **Java bulunamıyor:** JAVA_HOME değişkeninin doğru tanımlandığından emin olun
+*   **SSH bağlantı hatası:** Parolasız SSH yapılandırmasını kontrol edin
+*   **NameNode formatlanamıyor:** Daha önceki veri dizinlerini temizleyin
+*   **DataNode bağlanamıyor:** Firewall ayarlarını ve port erişimlerini kontrol edin
+    *   **Firewall Ayarları ve Yönetimi**
+        ```bash
+        # Firewall'ı açma
+        sudo ufw enable
+        # Port Açma
+        sudo ufw allow 8080
+        # Protokol Bazlı Port Açma
+        sudo ufw allow 8080/tcp
+        sudo ufw allow 8080/udp
+        # Firewall'ın Durumunu (Açıkmı-Kapalımı?) Görme
+        sudo ufw status
+        ```
+*   **Java bulunamıyor:** JAVA_HOME değişkeninin doğru tanımlandığından emin olun
 
 Hata mesajlarını dikkatlice okumak, dağıtık sistemlerde sorun çözme becerinizi geliştirecek en önemli alışkanlıktır.
 
-***
+---
+
 ## Apache Spark, Hive, Pig ve Mahout: Hadoop Ekosisteminin Diğer Oyuncuları
+
 Hadoop’un temel yapısını, yani veriyi nasıl depoladığını (HDFS) ve bu veriyi nasıl işlediğini (MapReduce) geçen haftalarda konuştuk. Ancak Hadoop saf haliyle, yani sadece Java kodları yazarak veri işlemek, özellikle büyük ölçekli projelerde zaman alıcı ve zahmetli olabilir. Bu sebeple ekosistemde işlerimizi kolaylaştıran, veriye erişimi hızlandıran ve analiz yeteneklerimizi artıran başka araçlar geliştirilmiştir.
 
 Bugün, bu ekosistemin diğer önemli oyuncularını; Spark, Hive, Pig ve Mahout’u konuşacağız. Ayrıca veri akışını sağlayan Sqoop ve Flume gibi araçlara da kısaca değinmekte fayda var.
 
-Gençler, bu araçları anlamak için öncelikle neden var olduklarını kavramamız gerekiyor.
-
-Hadoop’u devasa bir kütüphane deposu gibi düşünün. Milyonlarca kitap var ama aradığınızı bulmak veya bu kitaplardan bir özet çıkarmak için her seferinde depoya girip tek tek rafları gezmeniz, kitapları indirmeniz ve not almanız gerekiyor. Bu, MapReduce’un çalışma mantığıdır; güçlüdür ama yavaştır.
+Gençler, bu araçları anlamak için öncelikle neden var olduklarını kavramamız gerekiyor. Hadoop’u devasa bir kütüphane deposu gibi düşünün. Milyonlarca kitap var ama aradığınızı bulmak veya bu kitaplardan bir özet çıkarmak için her seferinde depoya girip tek tek rafları gezmeniz, kitapları indirmeniz ve not almanız gerekiyor. Bu, MapReduce’un çalışma mantığıdır; güçlüdür ama yavaştır.
 
 **Apache Hive**, bu depoda çalışan ve sizin dilinizden anlayan bir kütüphane memuru gibidir. Siz ona "Bana tarihi romanların listesini getir" dersiniz (ki buna SQL benzeri bir dil diyoruz), o arka planda gidip o zorlu rafları tarar ve sonucu size getirir. Sizi karmaşık Java kodları yazmaktan kurtarır, sanki standart bir veritabanı kullanıyormuşsunuz gibi hissettirir.
 
@@ -461,21 +456,26 @@ Hadoop’u devasa bir kütüphane deposu gibi düşünün. Milyonlarca kitap var
 
 Şimdi bu araçların mimari yapılarına ve teknik detaylarına biraz daha yakından bakalım.
 
-**Apache Hive ve Veri Ambarı Yaklaşımı**
+### Apache Hive ve Veri Ambarı Yaklaşımı
+
 Hive, Facebook tarafından geliştirilmiş ve sonrasında açık kaynak haline getirilmiş bir veri ambarı altyapısıdır. Temel amacı, SQL bilen analistlerin Hadoop üzerinde rahatça çalışabilmesini sağlamaktır. Hive, yazdığınız HQL (Hive Query Language) sorgularını alır ve arka planda bunları MapReduce veya Tez işlerine dönüştürür.
 Burada dikkat etmeniz gereken nokta şudur: Hive, gerçek zamanlı bir veritabanı değildir. OLTP (Online Transaction Processing) işlemlerinden ziyade OLAP (Online Analytical Processing) için tasarlanmıştır. Yani "bir satır sileyim, hemen güncelleyeyim"den ziyade, "son 10 yılın satış verilerini analiz edeyim" senaryoları için uygundur. Verinin şeması, veri yazılırken değil okunurken kontrol edilir (Schema on Read), bu da esneklik sağlar.
 
-**Apache Pig ve Veri Akışı (Data Flow)**
+### Apache Pig ve Veri Akışı (Data Flow)
+
 Yahoo tarafından geliştirilen Pig, "Pig Latin" adı verilen bir betik dili kullanır. SQL bildirimseldir (ne istediğinizi söylersiniz), Pig Latin ise prosedüreldir (nasıl yapılacağını adım adım söylersiniz). Bu, özellikle yapılandırılmamış veya yarı yapılandırılmış veriler üzerinde ETL (Extract, Transform, Load) işlemleri yaparken büyük avantaj sağlar. Karmaşık MapReduce zincirlerini (Join, Group, Filter) çok daha az satır kodla yazmanıza olanak tanır.
 
-**Apache Spark ve Bellek İçi İşleme (In-Memory Processing)**
+### Apache Spark ve Bellek İçi İşleme (In-Memory Processing)
+
 Spark, Hadoop ekosistemindeki en önemli kırılma noktalarından biridir. MapReduce modelindeki disk I/O (girdi/çıktı) darboğazını aşmak için RDD (Resilient Distributed Datasets) yapısını kullanır. Veriyi belleğe yükler ve iş bitene kadar orada tutar. Bu, iteratif algoritmalar (örneğin makine öğrenmesi) için performansı 100 kata kadar artırabilir.
 Spark sadece hızlı değildir; aynı zamanda Spark SQL, Spark Streaming, MLlib (Makine Öğrenmesi) ve GraphX (Çizge İşleme) gibi modülleri tek bir çatı altında toplar. Yani hem veriyi işleyip hem de üzerinde makine öğrenmesi modelini aynı platformda koşturabilirsiniz.
 
-**Apache Mahout ve Makine Öğrenmesi**
+### Apache Mahout ve Makine Öğrenmesi
+
 Mahout, ölçeklenebilir makine öğrenmesi kütüphanesidir. Öneri sistemleri (Recommendation), Kümeleme (Clustering) ve Sınıflandırma (Classification) algoritmalarını içerir. Gençler, burada bir parantez açmak gerekir; Mahout ilk çıktığında MapReduce üzerinde çalışıyordu ancak MapReduce'un yavaşlığı makine öğrenmesi eğitim süreçlerini hantallaştırdığı için, günümüzde Mahout daha çok Spark veya Flink gibi motorlar üzerinde çalışacak şekilde evrilmiştir veya yerini Spark'ın kendi kütüphanesi olan MLlib'e bırakmaktadır. Ancak tarihsel gelişimi ve temel algoritmaları anlamak adına bilinmesi gerekir.
 
-**Tamamlayıcı Araçlar: Zookeeper, Sqoop ve Flume**
+### Tamamlayıcı Araçlar: Zookeeper, Sqoop ve Flume
+
 Bu ekosistemi ayakta tutan gizli kahramanlar da vardır:
 
 *   **Zookeeper:** Dağıtık sistemlerde koordinasyonu sağlar. Hangi sunucu ayakta, hangisi lider, konfigürasyonlar nerede tutuluyor gibi soruların cevabı Zookeeper'dadır. Bir nevi sistemin trafik polisidir.
@@ -484,25 +484,25 @@ Bu ekosistemi ayakta tutan gizli kahramanlar da vardır:
 
 Özetle, Hadoop bir temeldir. Hive ve Pig bu temel üzerinde veri analizini kolaylaştırır, Spark hızı ve yetenekleri artırır, Mahout ise veriden anlamlı modeller çıkarmanızı sağlar.
 
-Geçen dersimizde Hadoop ekosisteminin teorik çerçevesini ve bu ekosistemi oluşturan temel oyuncuları konuştuk. Bugün, bu araçların "kaputunun altına" bakacağız. Çünkü bir sistemi sadece tanımak yetmez; onun nasıl yapılandırıldığını ve bileşenlerin birbirleriyle nasıl konuştuğunu anlamanız gerekir.
+---
 
-Gençler, kurulumu tamamlanmış bir Hadoop kümesinin önünde oturduğunuzda, işletim sisteminin bu araçları tanıması için yapmanız gereken ilk iş, ortam değişkenlerini (Environment Variables) tanıtmaktır.
+Gençler, geçen dersimizde Hadoop ekosisteminin teorik çerçevesini ve bu ekosistemi oluşturan temel oyuncuları konuştuk. Bugün, bu araçların "kaputunun altına" bakacağız. Çünkü bir sistemi sadece tanımak yetmez; onun nasıl yapılandırıldığını ve bileşenlerin birbirleriyle nasıl konuştuğunu anlamanız gerekir.
 
-Bir bilgisayara "Hadoop çalıştır" veya "Spark'ı başlat" dediğinizde, bilgisayarın bu komutların hangi klasörde durduğunu bilmesi gerekir. Linux tabanlı sistemlerde `.bashrc` dosyasını düzenleyerek `JAVA_HOME`, `HADOOP_HOME`, `SPARK_HOME` ve `HIVE_HOME` gibi yolları tanımlamamızın sebebi budur. Bu tanımları yapmazsanız, sistem her seferinde size "Ben bu komutu tanımıyorum" cevabını verecektir. Bu, işin alfabesidir.
+Gençler, kurulumu tamamlanmış bir Hadoop kümesinin önünde oturduğunuzda, işletim sisteminin bu araçları tanıması için yapmanız gereken ilk iş, ortam değişkenlerini (Environment Variables) tanıtmaktır. Bir bilgisayara "Hadoop çalıştır" veya "Spark'ı başlat" dediğinizde, bilgisayarın bu komutların hangi klasörde durduğunu bilmesi gerekir. Linux tabanlı sistemlerde `.bashrc` dosyasını düzenleyerek `JAVA_HOME`, `HADOOP_HOME`, `SPARK_HOME` ve `HIVE_HOME` gibi yolları tanımlamamızın sebebi budur. Bu tanımları yapmazsanız, sistem her seferinde size "Ben bu komutu tanımıyorum" cevabını verecektir. Bu, işin alfabesidir.
 
-**Konfigürasyon Dosyalarının Mantığı**
+### Konfigürasyon Dosyalarının Mantığı
 
 Hadoop ve üzerine kurulu araçların beyni, `conf` veya `etc` klasörleri altındaki XML dosyalarıdır. Kurulum aşamasında sıkça karşılaşacağınız `core-site.xml`, `hdfs-site.xml`, `yarn-site.xml` ve `mapred-site.xml` dosyaları, sistemin anayasasıdır.
 
 Örneğin, `core-site.xml` içinde NameNode'un hangi adreste çalıştığını belirtirsiniz. Eğer Hive veya Spark kullanacaksanız, bu araçlar veriyi nereden okuyacaklarını bilmek zorundadır. İşte bu XML dosyaları, Spark ve Hive'a "Veri HDFS üzerinde şu adreste duruyor, git oradan oku" talimatını veren yerdir. Bu dosyaları doğru yapılandırmadan hiçbir analiz aracı veriye ulaşamaz.
 
-**Hive Metastore Yapısı**
+### Hive Metastore Yapısı
 
 Hive özelinde konuşacak olursak, en kritik kavram "Metastore"dur. Geçen hafta Hive'ın veriyi SQL benzeri dille sorguladığını söyledim. Peki, Hive tabloların isimlerini, sütun tiplerini veya verinin HDFS'teki yerini nerede tutuyor?
 
 Verinin kendisi HDFS'tedir, evet. Ancak verinin "kimliği" (metadata) dediğimiz şema bilgisi, ilişkisel bir veritabanında tutulmak zorundadır. Varsayılan kurulumda Hive, bu iş için Derby adında küçük bir veritabanı kullanır. Ancak Derby tek kullanıcılıdır; yani aynı anda sadece bir kişi sorgu atabilir. Gerçek dünyada biz `hive-site.xml` dosyasını düzenleyerek Hive'ı MySQL veya PostgreSQL gibi daha güçlü bir veritabanına bağlarız. Buna "Remote Metastore" kurulumu diyoruz. Böylece siz veriyi sorgularken Hive önce MySQL'e gidip "Bu tablo nerede?" diye sorar, aldığı cevaba göre HDFS'ten veriyi çeker. Bu ayrımı iyi anlamanız gerekiyor: Veri HDFS'te, verinin bilgisi Metastore'da saklanır.
 
-**Spark ve YARN İlişkisi**
+### Spark ve YARN İlişkisi
 
 Spark'a geçtiğimizde ise kaynak yönetimi devreye girer. Spark kendi başına bir "Standalone" modda çalışabilir ancak kurumsal bir yapıda Spark işlerini genellikle YARN (Yet Another Resource Negotiator) üzerinden yönetiriz.
 
@@ -511,15 +511,16 @@ Buradaki işleyiş şöyledir: Siz bir Spark kodu yazdınız ve `spark-submit` k
 Spark mimarisinde iki temel bileşen göreceksiniz: **Driver** ve **Executors**.
 Driver, yazdığınız kodun ana komuta merkezidir; işi planlar. Executor'lar ise işi fiilen yapan işçilerdir. Konfigürasyon dosyalarında (`spark-defaults.conf`) veya komut satırında belirlediğiniz `--num-executors`, `--executor-memory` gibi parametreler, işinizin ne kadar hızlı biteceğini doğrudan etkiler. Eğer kümenizin kapasitesinden fazla kaynak isterseniz işiniz kuyrukta bekler; az isterseniz de sistem kaynakları boşa harcanmış olur.
 
-**Entegrasyon Noktaları**
+### Entegrasyon Noktaları
 
-Son olarak, bu araçların birbirine nasıl bağlandığına değinelim.
-Spark, Hive tablolarını doğrudan okuyabilir. Ancak bunun için Spark'ın, Hive'ın konfigürasyon dosyalarına (`hive-site.xml`) erişimi olması gerekir. Genellikle bu dosyayı Spark'ın konfigürasyon klasörüne kopyalayarak bu sorunu çözeriz. Böylece Spark SQL kullanarak, sanki Hive içindeymiş gibi sorgular atabilir ancak Spark'ın bellek içi (in-memory) hızından faydalanabilirsiniz.
+Son olarak, bu araçların birbirine nasıl bağlandığına değinelim. Spark, Hive tablolarını doğrudan okuyabilir. Ancak bunun için Spark'ın, Hive'ın konfigürasyon dosyalarına (`hive-site.xml`) erişimi olması gerekir. Genellikle bu dosyayı Spark'ın konfigürasyon klasörüne kopyalayarak bu sorunu çözürüz. Böylece Spark SQL kullanarak, sanki Hive içindeymiş gibi sorgular atabilir ancak Spark'ın bellek içi (in-memory) hızından faydalanabilirsiniz.
 
 Özetle gençler; bugünkü teknik altyapı anlatımımızda şunu görmenizi istedim: Bu araçlar birbirinden bağımsız adalar değildir. Hepsi aynı dosya sistemini (HDFS) ve aynı kaynak yöneticisini (YARN) paylaşan, birbirlerinin konfigürasyon dosyalarını okuyarak haberleşen entegre bir yapıdır. Bir sonraki dersimizde artık terminali açıp bu konfigürasyonların pratikte nasıl işlediğini ve ilk sorgularımızı nasıl çalıştıracağımızı göreceğiz.
 
-***
-## Virtual Box ve Hadoop, Spark vd. Araçların Kurulumu 
+---
+
+## VirtualBox ve Hadoop, Spark vd. Araçların Kurulumu
+
 Gençler, bugün büyük veri ekosistemini üzerine inşa edeceğimiz temeli atıyoruz. Geçen derslerde bahsettiğimiz o karmaşık mimarilerin, NameNode’ların, Spark Executor’ların çalışacağı "evi" inşa edeceğiz.
 
 Mühendislikte bir sistemi öğrenmenin en güvenli yolu, onu izole edilmiş bir ortamda test etmektir. Kendi ana bilgisayarınızı bozmadan, hata yapmaktan korkmayacağınız bir alan yaratmak zorundasınız. İşte bu yüzden bugün **Sanallaştırma (Virtualization)** yapacağız.
@@ -537,7 +538,8 @@ Süreci iki ana başlıkta ele alacağız: Hazırlık ve Kurulum Mantığı.
 1.  **Sanallaştırma Yazılımı (Hypervisor):** Bilgisayarınızın donanımını (RAM, İşlemci, Disk) paylaştıracak olan yazılımdır. Biz **Oracle VirtualBox** kullanacağız. Ücretsizdir, stabildir ve eğitim için idealdir. Kendi işletim sisteminize uygun olan sürümü indirip kurun.
 2.  **İşletim Sistemi İmajı (ISO Dosyası):** Sanal makineye takacağımız "sanal DVD"dir. Ubuntu’nun web sitesinden "Desktop" sürümünü indireceğiz. Burada dikkat: **LTS (Long Term Support)** ibaresi olan sürümü indirin (örneğin 20.04 LTS veya 22.04 LTS). Ara sürümler (örneğin 23.10) daha yeni özellikler barındırsa da, kararlılık bizim için yenilikten daha önemlidir.
 
-**Kritik Uyarı: BIOS/UEFI Ayarları**
+#### Kritik Uyarı: BIOS/UEFI Ayarları
+
 Özellikle Windows kullanan arkadaşlar; VirtualBox’ı kurup "Başlat"a bastığınızda hata alırsanız, %90 ihtimalle bilgisayarınızın BIOS ayarlarında **Sanallaştırma Teknolojisi (Intel VT-x veya AMD-V)** kapalıdır. Bilgisayarınızı yeniden başlatıp BIOS ekranına girerek bu özelliği "Enabled" (Aktif) duruma getirmeniz gerekir. Bu ayar açık olmadan 64-bit sanal makine çalıştıramazsınız.
 
 ---
@@ -558,7 +560,7 @@ Karşınıza klasik bir kurulum ekranı gelecek. Burada dikkat etmeniz gerekenle
 *   **Dil Seçimi:** İngilizce kurmanızı tavsiye ederim. Hata aldığınızda internette yapacağınız aramalarda İngilizce hata mesajları size çok daha doğru sonuçlar verecektir.
 *   **Updates and Other Software:** "Minimal Installation" yerine "Normal Installation" seçebilirsiniz, ancak disk alanınız kısıtlıysa minimal de iş görür. "Download updates while installing Ubuntu" seçeneğini işaretleyin, güncel başlayalım.
 *   **Disk Yapılandırması:** Sanal makine içinde olduğumuz için "Erase disk and install Ubuntu" seçeneğinden korkmayın. Bu işlem Windows'taki dosyalarınızı silmez; sadece sanal makineye ayırdığınız o sanal diski formatlar.
-*   **Kullanıcı Adı:** Basit, hatırlaması kolay ve Türkçe karakter içermeyen bir kullanıcı adı belirleyin (örneğin: `hadoopuser` veya kendi isminiz). Şifreniz de eğitim süresince pratik olması açısından kısa olabilir ancak üretim ortamlarında güçlü şifreler kullanmanız gerektiğini unutmayın.
+*   **Kullanıcı Adı:** Basit, hatırlaması kolay ve Türkçe karakter içermeyen bir kullanıcı adı belirleyin (örneğin: `hduser` veya kendi isminiz). Şifreniz de eğitim süresince pratik olması açısından kısa olabilir ancak üretim ortamlarında güçlü şifreler kullanmanız gerektiğini unutmayın.
 
 ---
 
@@ -578,9 +580,14 @@ Kurulum bitti, sanal makine yeniden başladı ve karşınızda Ubuntu masaüstü
 
 Gençler, önümüzdeki derste bu terminal penceresini sıkça kullanacağız. Siyah ekrandan korkmayın; o ekran sizin sisteme hükmettiğiniz yerdir. Bir sonraki derste Java kurulumu ve SSH ayarlarıyla devam edeceğiz. Hazırlıklarınızı tamamlayın.
 
+---
+
+## Sistem Gereksinimleri ve Temel Kurulum (Java, SSH)
+
 Gençler, sanal makinelerinizin hazır olduğunu varsayarak derse başlıyorum. Önünüzde temiz bir Ubuntu masaüstü ve açılmayı bekleyen bir terminal penceresi var.
 
 Bugün yapacağımız işlem, boş bir odayı (işletim sistemi) bir atölyeye (geliştirme ortamı) dönüştürmektir. Hadoop ve diğer büyük veri araçlarının çalışabilmesi için işletim sistemine iki temel yetenek kazandırmamız gerekiyor:
+
 1.  **Java Dili:** Hadoop’un ana dili.
 2.  **Parolasız Erişim (SSH):** Hadoop’un kendi bileşenleri arasında engelsiz konuşabilmesi.
 
@@ -623,14 +630,16 @@ Hadoop çalıştığında, **NameNode** (Yönetici), **DataNode** (İşçi) ile 
 
 Bunun için **SSH (Secure Shell)** protokolünü yapılandıracağız.
 
-**Adım 3.1: SSH Sunucusunu Kurun**
+#### Adım 3.1: SSH Sunucusunu Kurun
+
 Ubuntu'nun masaüstü sürümünde SSH sunucusu varsayılan olarak gelmeyebilir. Önce onu kuralım:
 
 ```bash
 sudo apt install openssh-server -y
 ```
 
-**Adım 3.2: Anahtar Çifti Oluşturma (Key Generation)**
+#### Adım 3.2: Anahtar Çifti Oluşturma (Key Generation)
+
 Şimdi dijital bir kimlik kartı oluşturacağız. Bu karta sahip olan kişi (yani yine siz), sisteme parolasız girebilecek.
 
 Şu komutu yazın:
@@ -642,14 +651,16 @@ ssh-keygen -t rsa -P ""
 *   Bize "Dosyayı nereye kaydedeyim?" diye soracak, **Enter**'a basıp geçin (varsayılan yer iyidir).
 *   `-P ""` parametresi, parolasız bir anahtar istediğimizi belirtir. Eğer burayı boş bırakmazsanız, Hadoop her çalıştığında sizden bu parolayı ister, amacımıza ulaşamayız.
 
-**Adım 3.3: Anahtarı Tanıtma**
+#### Adım 3.3: Anahtarı Tanıtma
+
 Oluşturduğumuz bu anahtarı (kimlik kartını), bilgisayarın "Güvenilir Kişiler Listesi"ne (authorized_keys) eklememiz lazım.
 
 ```bash
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
-**Adım 3.4: Test Etme**
+#### Adım 3.4: Test Etme
+
 Burası "turnusol kağıdı"dır. Eğer bu adım çalışmazsa Hadoop çalışmaz.
 Terminale şu komutu yazın:
 
@@ -676,6 +687,7 @@ Dosyanın en altına inin (yön tuşlarıyla) ve şu satırı ekleyin:
 ```bash
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ```
+
 *(Not: Genellikle Java yolu budur, ama farklıysa kontrol etmek gerekir. Şimdilik standart kurulumda bu yol geçerlidir.)*
 
 Dosyayı kaydetmek için `CTRL + O`, sonra `Enter`, çıkmak için `CTRL + X` tuşlarına basın.
@@ -687,20 +699,16 @@ source ~/.bashrc
 ```
 
 Kontrol etmek için:
+
 ```bash
 echo $JAVA_HOME
 ```
+
 Ekrana az önce yazdığımız dosya yolunu basıyorsa işlem tamamdır.
 
 ---
 
-Gençler, şu an elimizde;
-1.  Sanal makinesi çalışan,
-2.  Java motoru takılmış,
-3.  Kendi kendine parolasız bağlanabilen (SSH),
-4.  Gerekli yol tanımları yapılmış bir sistem var.
-
-Burası işin "mutfağıydı". Bir sonraki dersimizde asıl malzemeyi, yani **Apache Hadoop**'u indirip, bu hazırladığımız altyapının üzerine kuracağız. Terminal pencerelerinizi kapatmadan önce `sudo shutdown now` diyerek makinenizi usulüne uygun kapatmayı unutmayın.
+## Apache Hadoop Kurulumu ve Yapılandırması
 
 Gençler, mutfağı hazırladık, ocağı yaktık. Şimdi sıra ana yemeği yapmaya geldi. Bugün Apache Hadoop’u indirip, sistemin beyni olan konfigürasyon dosyalarını düzenleyeceğiz.
 
@@ -726,7 +734,7 @@ Dosyalar çıktıktan sonra, klasör ismi çok uzun olacağı için (hadoop-3.3.
 mv hadoop-3.3.6 hadoop
 ```
 
-Artık ev dizininizde (`/home/kullanici_adiniz/hadoop`) Hadoop dosyaları duruyor.
+Artık ev dizininizde (`/home/hduser/hadoop`) Hadoop dosyaları duruyor.
 
 ### 2. Ortam Değişkenlerinin Güncellenmesi
 
@@ -748,6 +756,7 @@ export HADOOP_YARN_HOME=$HADOOP_HOME
 ```
 
 Kaydedip çıkın (`Ctrl+O`, `Enter`, `Ctrl+X`) ve ayarları aktif edin:
+
 ```bash
 source ~/.bashrc
 ```
@@ -756,16 +765,19 @@ source ~/.bashrc
 
 Hadoop’un ayar dosyaları `~/hadoop/etc/hadoop` klasörü altındadır. Buradaki 4 temel dosyayı düzenleyeceğiz.
 
-**3.1. hadoop-env.sh (Java Tanıtımı)**
+#### 3.1. hadoop-env.sh (Java Tanıtımı)
+
 Hadoop bazen sistemdeki global Java yolunu bulmakta zorlanabilir. İşi garantiye almak için bu dosyanın içine Java yolunu elle yazacağız.
 
 ```bash
 nano $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 ```
+
 Dosya içinde `export JAVA_HOME=` satırını bulun ve geçen ders öğrendiğimiz yolu yapıştırın:
 `export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64`
 
-**3.2. core-site.xml (Adres Beyanı)**
+#### 3.2. core-site.xml (Adres Beyanı)
+
 Bu dosya, Hadoop dosya sisteminin (HDFS) hangi adreste çalışacağını belirtir.
 
 ```bash
@@ -782,9 +794,11 @@ nano $HADOOP_HOME/etc/hadoop/core-site.xml
     </property>
 </configuration>
 ```
+
 *Anlamı: NameNode, localhost üzerinde 9000 portunu dinleyecek.*
 
-**3.3. hdfs-site.xml (Replikasyon Ayarı)**
+#### 3.3. hdfs-site.xml (Replikasyon Ayarı)
+
 Burası kritik. Hadoop varsayılan olarak her veriyi 3 farklı makineye kopyalar (Replication Factor: 3). Ancak bizim sadece 1 makinemiz var. Eğer bunu 1'e düşürmezsek, Hadoop sürekli "Diğer 2 makine nerede?" diye hata arar.
 
 Ayrıca NameNode ve DataNode verilerinin fiziksel olarak diskinizde nereye kaydedileceğini de burada belirtmeliyiz. Önce bu klasörleri oluşturalım:
@@ -795,6 +809,7 @@ mkdir -p ~/hadoop_data/datanode
 ```
 
 Şimdi dosyayı düzenleyelim:
+
 ```bash
 nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 ```
@@ -807,20 +822,23 @@ nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml
     </property>
     <property>
         <name>dfs.namenode.name.dir</name>
-        <value>file:///home/KULLANICI_ADINIZ/hadoop_data/namenode</value>
+        <value>file:///home/hduser/hadoop_data/namenode</value>
     </property>
     <property>
         <name>dfs.datanode.data.dir</name>
-        <value>file:///home/KULLANICI_ADINIZ/hadoop_data/datanode</value>
+        <value>file:///home/hduser/hadoop_data/datanode</value>
     </property>
 </configuration>
 ```
-*(Not: KULLANICI_ADINIZ kısmını kendi kullanıcı adınızla değiştirmeyi unutmayın.)*
 
-**3.4. mapred-site.xml ve yarn-site.xml (İşlem Gücü)**
+*(Not: `hduser` kısmını kendi kullanıcı adınızla değiştirmeyi unutmayın.)*
+
+#### 3.4. mapred-site.xml ve yarn-site.xml (İşlem Gücü)
+
 Hadoop sadece depolama değil, işlemedir. YARN ayarlarını yaparak MapReduce işlerinin yönetilmesini sağlarız.
 
 `mapred-site.xml`:
+
 ```xml
 <configuration>
     <property>
@@ -831,6 +849,7 @@ Hadoop sadece depolama değil, işlemedir. YARN ayarlarını yaparak MapReduce i
 ```
 
 `yarn-site.xml`:
+
 ```xml
 <configuration>
     <property>
@@ -856,11 +875,13 @@ Ekranda akan yazılar arasında "Storage directory has been successfully formatt
 Artık marşa basabiliriz.
 
 HDFS'i başlatmak için:
+
 ```bash
 start-dfs.sh
 ```
 
 YARN'ı başlatmak için:
+
 ```bash
 start-yarn.sh
 ```
@@ -878,7 +899,8 @@ Eğer bunlardan biri (örneğin DataNode) eksikse, o servisin log dosyasına bak
 
 Gençler, eğer `jps` çıktınız tam ise, tarayıcınızı açıp `http://localhost:9870` adresine gidin. Karşınızda Hadoop’un yönetim paneli (Dashboard) belirecektir. Bu ekranı görebiliyorsanız, tebrikler; artık çalışan bir Büyük Veri kümeniz var. Bir sonraki derste bu boş kümeye ilk verimizi yükleyip analiz edeceğiz.
 
-***
+---
+
 ## Uygulama: İlk Hadoop İşimiz - WordCount
 
 Gençler, geçen hafta zorlu bir kurulum sürecini atlattınız. `jps` komutunu yazdığınızda o listeyi görmek, sistemin kalbinin attığını gösterir. Ancak şu an elinizde boş bir fabrika var. Makineler çalışıyor ama bantların üzerinde işlenecek hammadde yok.
@@ -901,8 +923,8 @@ Hadoop'ta çalışırken düzenli olmak esastır. Önce HDFS içinde kendimize b
 
 ```bash
 hdfs dfs -mkdir /user
-hdfs dfs -mkdir /user/hadoopuser
-hdfs dfs -mkdir /user/hadoopuser/giris_verisi
+hdfs dfs -mkdir /user/hduser
+hdfs dfs -mkdir /user/hduser/giris_verisi
 ```
 
 Bu komutlarla HDFS'in kök dizininde hiyerarşik bir yapı oluşturduk. Linux'taki `mkdir` komutunun aynısıdır, sadece HDFS üzerinde çalışır.
@@ -925,13 +947,13 @@ Kaydedip çıkın (`Ctrl+O`, `Enter`, `Ctrl+X`).
 Şimdi bu dosyayı Linux'tan alıp HDFS'teki fabrikaya sokalım:
 
 ```bash
-hdfs dfs -put deneme.txt /user/hadoopuser/giris_verisi/
+hdfs dfs -put deneme.txt /user/hduser/giris_verisi/
 ```
 
-Dosyanın gidip gitmediğini kontrol edelim:
+Dosyanın gidip gidmediğini kontrol edelim:
 
 ```bash
-hdfs dfs -ls /user/hadoopuser/giris_verisi/
+hdfs dfs -ls /user/hduser/giris_verisi/
 ```
 
 Listede `deneme.txt` dosyasını görüyorsanız, veri artık işlenmeye hazırdır.
@@ -946,12 +968,13 @@ Bu komut biraz uzundur, mantığını anlatayım:
 Komutu dikkatlice yazın:
 
 ```bash
-hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar wordcount /user/hadoopuser/giris_verisi /user/hadoopuser/sonuc_cikti
+hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar wordcount /user/hduser/giris_verisi /user/hduser/sonuc_cikti
 ```
+
 *(Not: Sürüm numaranız 3.3.6'dan farklıysa `hadoop-mapreduce-examples-*.jar` yazarak tab tuşuna basıp tamamlayabilirsiniz.)*
 
 **Çok Kritik Bir Kural:**
-Gençler, komutun sonundaki `/user/hadoopuser/sonuc_cikti` klasörü **HDFS'te var olmamalıdır**. Hadoop, yanlışlıkla mevcut bir verinin üzerine yazmamak için, çıktı klasörünü kendisi oluşturmak ister. Eğer bu klasör zaten varsa "Output directory already exists" hatası alırsınız ve program çalışmaz.
+Gençler, komutun sonundaki `/user/hduser/sonuc_cikti` klasörü **HDFS'te var olmamalıdır**. Hadoop, yanlışlıkla mevcut bir verinin üzerine yazmamak için, çıktı klasörünü kendisi oluşturmak ister. Eğer bu klasör zaten varsa "Output directory already exists" hatası alırsınız ve program çalışmaz.
 
 **Terminalde Neler Oluyor?**
 Enter'a bastığınızda terminal akmaya başlayacak.
@@ -967,7 +990,7 @@ Enter'a bastığınızda terminal akmaya başlayacak.
 Hadoop sonuçları ekrana basmaz, HDFS'e dosyalar halinde yazar. Bakalım sonuç klasöründe neler var:
 
 ```bash
-hdfs dfs -ls /user/hadoopuser/sonuc_cikti
+hdfs dfs -ls /user/hduser/sonuc_cikti
 ```
 
 Burada `_SUCCESS` (işin başarılı olduğunu gösteren boş dosya) ve `part-r-00000` (asıl sonuç dosyası) göreceksiniz.
@@ -975,10 +998,11 @@ Burada `_SUCCESS` (işin başarılı olduğunu gösteren boş dosya) ve `part-r-
 Sonucu okumak için:
 
 ```bash
-hdfs dfs -cat /user/hadoopuser/sonuc_cikti/part-r-00000
+hdfs dfs -cat /user/hduser/sonuc_cikti/part-r-00000
 ```
 
 Ekranda şuna benzer bir çıktı göreceksiniz:
+
 ```text
 Big     1
 Data    1
@@ -989,6 +1013,7 @@ is      3
 ```
 
 ### Özetle Ne Yaptık?
+
 Arka planda inanılmaz bir işbirliği gerçekleşti.
 1.  Siz veriyi HDFS'e attınız, **NameNode** bu verinin hangi bloklarda saklanacağını kaydetti.
 2.  İşi başlattığınızda **YARN (ResourceManager)**, kümedeki kaynakları (CPU/RAM) ayarladı.
@@ -996,3 +1021,327 @@ Arka planda inanılmaz bir işbirliği gerçekleşti.
 4.  Kod verinin olduğu yere gitti (Data Locality), işlemi yaptı ve sonucu tekrar HDFS'e yazdı.
 
 Bugünlük bu kadar. Ham veriyi yüklemeyi ve işlemeyi gördük. Ancak fark ettiyseniz `wordcount` gibi basit bir iş için bile çok uzun komutlar yazdık. Gelecek derste, bu karmaşık komutlar yerine SQL benzeri bir dil kullanarak aynı işlemleri **Apache Hive** ile nasıl çok daha kolay yapacağımızı göreceğiz. Makinelerinizi kapatabilirsiniz.
+
+---
+
+## 6. Hadoop Ekosistemi: Alet Çantamızı Genişletiyoruz
+
+Gençler, geçen hafta terminalin o siyah ekranında, uzun Java komutları arasında biraz bunaldığınızı biliyorum. "WordCount" yapmak için bile o kadar satır kodla uğraşmak, bir çivi çakmak için balyoz kullanmaya benzer. Hadoop'un çekirdeği (HDFS ve MapReduce) çok güçlüdür ama ham haliyle kullanımı zordur.
+
+Bugün size güzel bir haberim var: "Ameleliği" azaltıyoruz. Açık kaynak topluluğu da sizin gibi düşünmüş ve bu zorlu motorun üzerine, kullanımı daha kolay "kaportalar" ve "direksiyonlar" eklemiş.
+
+Hadoop sadece bir depolama alanı değil, devasa bir ekosistemdir. Bugün bu ekosistemin en popüler üç silahşorunu tanıyacağız: **Hive**, **Pig** ve emektar **Mahout**.
+
+### 6.1. Apache Hive: Veri Ambarının SQL Kapısı
+
+Bir veri analisti veya mühendisiyseniz, SQL (Structured Query Language) sizin ana dilinizdir. Hive, Facebook mühendisleri tarafından geliştirilmiştir. Dertleri şuydu: "Bizim elimizde petabaytlarca veri var ama herkes Java bilmiyor. Herkes SQL biliyor. Öyle bir şey yapalım ki, biz SQL yazalım, o arka planda gidip bunu MapReduce işine çevirsin."
+
+İşte Hive tam olarak budur. HDFS üzerinde tutulan yapılandırılmış verileri, sanki bir veritabanındaymış gibi sorgulamanızı sağlar.
+
+#### Uygulama: Hive ile Sınav Analizi
+
+Diyelim ki elimizde milyonlarca satırlık bir öğrenci not listesi var. HDFS üzerinde duruyor. Biz ortalamayı bulmak istiyoruz.
+
+**Adım 1: Veriyi Hazırlama**
+Önce basit bir `notlar.txt` oluşturalım (Linux tarafında):
+
+```bash
+nano notlar.txt
+```
+
+İçine şunu yazın (Format: ÖğrenciID, Ders, Not):
+
+```text
+101,Matematik,80
+102,Matematik,90
+101,Fizik,45
+103,Matematik,60
+102,Fizik,70
+```
+
+Bu dosyayı HDFS'e atmanıza gerek yok, Hive yüklemeyi kendi yapacak.
+
+**Adım 2: Hive Kabuğuna Giriş**
+Terminalde sadece `hive` yazın ve enter'a basın. Karşınıza `hive>` komut satırı gelecektir.
+
+**Adım 3: Tabloyu Oluşturma**
+Tıpkı MySQL veya Oracle'da olduğu gibi:
+
+```sql
+CREATE TABLE sinav_sonuclari (
+    ogrenci_id INT,
+    ders STRING,
+    puan INT
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ',';
+```
+
+*Anlamı: Virgülle ayrılmış bir dosya okuyacağım, sütunlar bunlardır.*
+
+**Adım 4: Veriyi Yükleme**
+Şimdi yerel diskimizdeki dosyayı bu tabloya basalım:
+
+```sql
+LOAD DATA LOCAL INPATH '/home/hduser/notlar.txt' INTO TABLE sinav_sonuclari;
+```
+
+**Adım 5: Ve Büyülü An (Sorgulama)**
+Artık Java yazmadan, MapReduce bilmeden analiz yapabiliriz.
+
+```sql
+SELECT ders, AVG(puan) FROM sinav_sonuclari GROUP BY ders;
+```
+
+Enter'a bastığınızda ekrana dikkatlice bakın. Hive size şunu diyecek: *"Launching Job 1 out of 1"*. Arka planda sizin SQL cümlenizi Java MapReduce koduna çeviriyor, YARN'a gönderiyor, hesaplatıyor ve sonucu size getiriyor.
+
+### 6.2. Apache Pig: Veri Mutfağının Şefi
+
+Gençler, Hive yapısal veriler (tablolar) için harikadır. Ama gerçek hayatta veri her zaman sütun sütun gelmez. Bazen veri kirlidir, karışıktır, log dosyası halindedir.
+
+Yahoo! mühendisleri de bu dertten muzdarip olup **Pig**'i geliştirdiler. Pig, bir veri akış (data flow) dilidir. "Pig Latin" denen kendine has, senaryo tabanlı bir dili vardır. Mantığı şudur: "Veriyi al -> Şuradan süz -> Bunu dönüştür -> Şuraya kaydet."
+
+#### Uygulama: Pig ile Filtreleme
+
+Az önceki not dosyasını düşünün. Sadece 50'den yüksek alan öğrencileri ayıklamak istiyoruz ama bunu adım adım (prosedürel) yapmak istiyoruz.
+
+**Adım 1: Pig Kabuğuna Giriş**
+Terminalde `pig` yazın. `grunt>` ibaresini göreceksiniz.
+
+**Adım 2: Veriyi Yükleme ve İşleme**
+Burada kodları satır satır yazacağız ama Pig "Lazy Execution" (Tembel Çalışma) prensibini kullanır. Siz "Sonucu Göster" diyene kadar hiçbir işlem yapmaz, sadece plan yapar.
+
+```pig
+-- 1. Veriyi yükle
+notlar = LOAD 'notlar.txt' USING PigStorage(',') AS (id:int, ders:chararray, puan:int);
+
+-- 2. Filtrele (Puanı 50'den büyük olanlar)
+gecenler = FILTER notlar BY puan > 50;
+
+-- 3. Sonucu Ekrana Bas (İşte şimdi çalışır!)
+DUMP gecenler;
+```
+
+Komutu verdiğinizde yine arka planda bir MapReduce işi dönecek ve ekrana sadece 50'den yüksek notlar dökülecektir. Pig, özellikle ETL (Extract-Transform-Load) dediğimiz veri temizleme işlerinde İsviçre çakısı gibidir.
+
+### 6.3. Apache Mahout: Yapay Zekanın Dedesi
+
+Geldik işin en havalı kısmına ama burada dürüst bir akademisyen uyarısı yapmam lazım. **Apache Mahout**, Hadoop üzerinde çalışan ilk makine öğrenmesi kütüphanesidir. "Büyük veri ile yapay zeka" kavramını o başlattı.
+
+Ancak gençler, Mahout şu an biraz yaşlandı. Artık sektörde makine öğrenmesi için **Spark MLlib** kullanıyoruz (bunu ileride anlatacağım). Ama Mahout'u bilmek, bu işin tarihini ve mantığını anlamak için şarttır. Hala bazı eski sistemlerde karşınıza çıkabilir.
+
+Mahout'un en meşhur olduğu konu **Öneri Sistemleri**dir (Recommendation Engines). Hani Netflix'te "Bunu izleyen şunu da izledi" veya Amazon'da "Bunu alan şunu da aldı" var ya, işte o.
+
+#### Uygulama Mantığı: Basit Bir Öneri Sistemi
+
+Mahout'u çalıştırmak için verinin çok özel bir formatta olması gerekir: KullanıcıID, ÜrünID, Puan.
+
+Örnek bir veri seti hayal edin (film_puanlari.txt):
+
+```text
+1,101,5.0  (1 nolu kullanıcı 101 nolu filme 5 vermiş)
+1,102,3.0
+2,101,5.0
+2,103,4.5
+```
+
+Mahout ile terminalden şu komutu verdiğinizde (komut örnektir, parametreler değişebilir):
+
+```bash
+mahout recommenditembased \
+--input film_puanlari.txt \
+--output oneriler \
+--similarityClassname SIMILARITY_PEARSON_CORRELATION
+```
+
+Mahout arka planda şunu yapar:
+
+1.  **Benzerlik Matrisi Çıkarır:** "1 nolu kullanıcı ile 2 nolu kullanıcı birbirine benziyor mu?" (İkisi de 101 filmine 5 vermiş, demek ki zevkleri aynı).
+2.  **Tahmin Yürütür:** "2 nolu kullanıcı 103 filmini sevmiş. 1 nolu kullanıcı ile zevkleri aynı olduğuna göre, 1 nolu kullanıcıya 103 filmini öner."
+
+Mahout bu işlemleri matematiksel matris çarpımları ile yapar ve bunu binlerce bilgisayara yayarak MapReduce üzerinden çözer. Yavaştır ama devasa verilerde çökmeden çalışır.
+
+### Özet ve Gelecek Hafta
+
+Gençler, toparlayalım:
+
+*   **Hadoop (HDFS+MapReduce):** Fabrikanın temeli ve motoru.
+*   **Hive:** Fabrikanın muhasebecisi, SQL ile konuşur, rapor çeker.
+*   **Pig:** Fabrikanın tesisatçısı, veri boru hatlarını döşer, temizlik yapar.
+*   **Mahout:** Fabrikanın eski ama bilge kahini, veriden geleceği tahmin eder.
+
+Bu araçların hepsi veriyi diskten okur, işler ve diske yazar. Bu yüzden biraz hantaldırlar. Gelecek hafta, bu hantallığı ortadan kaldıran, veriyi diskte değil RAM'de (bellekte) işleyerek 100 kat daha hızlı çalışan, günümüzün rock starı **Apache Spark**'a giriş yapacağız.
+
+O zamana kadar terminaliniz açık, hatanız bol (ki öğrenesiniz) olsun!
+
+---
+
+## 7. Büyük Verinin Hız Canavarı: Apache Spark Kurulumu ve Giriş
+
+Bu serinin başından beri "MapReduce" dedik, disk okuma/yazma dedik. Geçen ders Hive ve Pig ile işleri biraz kolaylaştırdık ama hala bir hantallık hissediyorsunuz, değil mi? Bir sorgu attığınızda sonucun gelmesi için çay demleyip içebiliyorsunuz.
+
+Bunun sebebi şuydu: Hadoop (MapReduce), her işlemde veriyi diske yazar ve diskten okur. Sabit disk, bilgisayarın en yavaş parçasıdır.
+
+Bugün sahneye **Apache Spark** çıkıyor. Spark'ın olayı şudur: "Ben veriyi mecbur kalmadıkça diske indirmem, her şeyi RAM'de (Bellek) yaparım." Bu sayede MapReduce'a göre 100 kata kadar daha hızlı çalışabilir. Kamyonla yük taşımaktan (Hadoop), Ferrari ile pistte turlamaya (Spark) geçiyoruz.
+
+Kemerlerinizi bağlayın, Ubuntu üzerine Spark kuruyoruz ve Python (PySpark) ile konuşuyoruz.
+
+---
+
+### 1. Hazırlık ve İndirme
+
+Spark'ın çalışması için Java ve Python gereklidir.
+1.  **Java:** Zaten Hadoop kurarken kurduk.
+2.  **Python:** Ubuntu ile kurulu gelir ama kontrol edelim.
+3.  **Hadoop:** Arkada çalışır durumda olmalı (HDFS'ten veri okuyacağız).
+
+Önce terminali açıp Hadoop'u uyandıralım (Eğer kapalıysa):
+
+```bash
+start-dfs.sh
+start-yarn.sh
+```
+
+Şimdi Spark'ı indirelim. Hadoop sürümümüzle uyumlu "Pre-built for Apache Hadoop" paketini seçeceğiz.
+
+```bash
+# Ev dizinine dönelim
+cd ~
+
+# Spark 3.5.0 sürümünü indirelim (Link örnektir, güncel sürümler değişebilir)
+wget https://dlcdn.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz
+
+# Paketi açalım
+tar -xzvf spark-3.5.0-bin-hadoop3.tgz
+
+# Klasör ismini sadeleştirelim
+mv spark-3.5.0-bin-hadoop3 spark
+```
+
+### 2. Ortam Değişkenlerinin Ayarlanması (.bashrc)
+
+Linux'a "Spark burada, Python da şurada" dememiz lazım. `.bashrc` dosyamızı tekrar açıyoruz.
+
+```bash
+nano ~/.bashrc
+```
+
+Dosyanın en altına, daha önce eklediğimiz Hadoop ayarlarının altına şunları ekleyin:
+
+```bash
+# SPARK AYARLARI
+export SPARK_HOME=~/spark
+export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+
+# Spark'ın Python 3 kullanmasını zorunlu kılıyoruz (Önemli!)
+export PYSPARK_PYTHON=python3
+```
+
+Kaydedip çıkın (Ctrl+O, Enter, Ctrl+X) ve ayarları aktif edin:
+
+```bash
+source ~/.bashrc
+```
+
+### 3. Spark ile Hadoop'u Tanıştırmak (Opsiyonel ama Önerilen)
+
+Spark bazen Hadoop kütüphanelerini bulamazsa hata verebilir. Garanti olsun diye Spark'ın konfigürasyon dosyasına Hadoop'un yerini fısıldayalım.
+
+```bash
+cd $SPARK_HOME/conf
+cp spark-env.sh.template spark-env.sh
+nano spark-env.sh
+```
+
+Dosyanın en altına şu satırı ekleyin:
+
+```bash
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+```
+
+Bu sayede Spark, HDFS'in nerede olduğunu (hdfs-site.xml) otomatik olarak Hadoop ayarlarından okuyacaktır.
+
+---
+
+### 4. Uygulama: PySpark Shell ile İlk Temas
+
+Kurulum bitti! Evet, Hadoop kadar zor değildi çünkü zemin hazırdı. Şimdi Spark'ın Python arayüzü olan **PySpark**'ı çalıştıralım.
+
+Terminalde şu komutu verin:
+
+```bash
+pyspark
+```
+
+Biraz bekleyin... Ekranda kocaman, havalı bir Spark logosu (ASCII art) belirmeli.
+Komut satırı `>>>` şekline dönüştüyse, şu an Spark'ın içindesiniz ve Python konuşuyorsunuz.
+
+#### İlk Alıştırma: RDD Oluşturma
+
+Gençler, Spark'ta veriler **RDD** (Resilient Distributed Dataset) denilen yapılarda tutulur. Bunlar RAM'de yaşayan, bozulursa kendini tamir edebilen veri listeleridir.
+
+Basit bir liste yapalım ve üzerinde işlem yapalım:
+
+```python
+# 1'den 5'e kadar bir liste oluşturup bunu RDD yapalım
+rakamlar = sc.parallelize([1, 2, 3, 4, 5])
+
+# Veriyi dönüştürelim: Her sayının karesini alalım
+kareler = rakamlar.map(lambda x: x * x)
+
+# Sonucu görelim (Action)
+kareler.collect()
+```
+
+Çıktı olarak `[1, 4, 9, 16, 25]` görmelisiniz.
+
+Buradaki sihir şu: `map` dediğinizde işlem yapılmadı. Spark "tamam planladım" dedi. `collect()` (yani sonucu getir) dediğiniz anda işlemi milisaniyeler içinde yapıp getirdi. Buna **Lazy Evaluation** (Tembel Çalışma) denir.
+
+Çıkmak için: `exit()` veya `Ctrl+D`.
+
+### 5. Gerçek Hayat Senaryosu: WordCount (Tekrar) ama Spark ile!
+
+Hatırlayın, Hadoop ile WordCount yapmak için Java'da sayfalarca kod derlemiş, jar yapmış, uzun komutlar yazmıştık. Bakalım aynı işi Spark ile kaç satırda yapacağız?
+
+Önce HDFS'te geçen ders yüklediğimiz `deneme.txt` duruyor mu emin olun.
+
+Tekrar `pyspark` yazıp girelim ve şu 3 satır kodu yazalım:
+
+```python
+# 1. HDFS'teki dosyayı oku
+text_file = sc.textFile("hdfs://localhost:9000/user/hduser/giris_verisi/deneme.txt")
+
+# 2. Sayma işlemini yap (Burası işin beyni)
+# flatMap: Satırları kelimelere böl
+# map: Her kelimeye (kelime, 1) değeri ver
+# reduceByKey: Aynı kelimelerin 1'lerini topla
+counts = text_file.flatMap(lambda line: line.split(" ")) \
+             .map(lambda word: (word, 1)) \
+             .reduceByKey(lambda a, b: a + b)
+
+# 3. Sonuçları ekrana bas
+output = counts.collect()
+for (word, count) in output:
+    print("%s: %i" % (word, count))
+```
+
+Enter'a bastığınızda ekranda kelime sayılarını göreceksiniz.
+Farkı gördünüz mü? Derleme yok, jar dosyası yok, bekleme yok. Sanki yerel bilgisayarda Python kodu yazar gibi HDFS üzerindeki veriyi analiz ettik.
+
+### 6. Büyük Resim: Ne Öğrendik?
+
+Gençler, bu ders notlarıyla birlikte sıfırdan bir "Big Data Mühendisi"nin başlangıç yolculuğunu tamamladınız.
+
+Şu an bilgisayarınızda (veya sanal makinenizde):
+
+1.  **Linux (Ubuntu):** İşletim sistemi temeli.
+2.  **Hadoop (HDFS):** Veri depolama ambarınız.
+3.  **YARN:** Kaynak yöneticiniz.
+4.  **Hive/Pig:** Veri analizi araçlarınız.
+5.  **Spark:** Gerçek zamanlı ve hızlı işlem motorunuz çalışıyor.
+
+Bu kurduklarınız, Facebook, Twitter, Amazon gibi devlerin kullandığı altyapının minyatür bir kopyasıdır.
+
+Hocanızdan Son Tavsiye:
+Teknoloji çok hızlı değişir. Bugün Spark popüler, yarın başka bir şey çıkar. Ama "Dağıtık Mimari" mantığı değişmez. Bir işi tek makinede değil, binlerce makinede nasıl böleceğinizi (MapReduce mantığını) kavradıysanız, hangi araç gelirse gelsin kullanırsınız.
+Hata yapmaktan korkmayın. O siyah ekrandaki "Error" yazıları sizin en iyi öğretmeninizdir.
